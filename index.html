@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===================== HEADER ===================== -->
+<header>
+    <div class="navbar">
+        <a href="#" class="nav-logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon" class="logo-img">
+        </a>
+        <div class="nav-location">
+            <span class="location-icon"><i class="fa-solid fa-location-dot"></i></span>
+            <div class="location-text">
+                <span class="deliver-to">Deliver to</span>
+                <span class="location-name">India <i class="fa-solid fa-chevron-down"></i></span>
+            </div>
+        </div>
+        <div class="nav-search">
+            <select class="search-category">
+                <option>All</option>
+                <option>Electronics</option>
+                <option>Books</option>
+                <option>Clothing</option>
+                <option>Home &amp; Garden</option>
+                <option>Sports</option>
+                <option>Toys</option>
+                <option>Automotive</option>
+                <option>Health</option>
+                <option>Beauty</option>
+            </select>
+            <input type="text" class="search-input" placeholder="Search Amazon.in">
+            <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="nav-language">
+            <img src="https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg" alt="IN" class="flag-icon">
+            <span>EN <i class="fa-solid fa-chevron-down"></i></span>
+        </div>
+        <div class="nav-item">
+            <span class="nav-line1">Hello, sign in</span>
+            <span class="nav-line2">Account &amp; Lists <i class="fa-solid fa-chevron-down"></i></span>
+        </div>
+        <div class="nav-item">
+            <span class="nav-line1">Returns</span>
+            <span class="nav-line2">&amp; Orders</span>
+        </div>
+        <a href="#" class="nav-cart">
+            <div class="cart-icon-wrap">
+                <span class="cart-count">0</span>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <span class="cart-label">Cart</span>
+        </a>
+    </div>
+
+    <div class="navbar-secondary">
+        <a href="#" class="nav-sec-item all-menu"><i class="fa-solid fa-bars"></i> All</a>
+        <a href="#" class="nav-sec-item">Today's Deals</a>
+        <a href="#" class="nav-sec-item">Customer Service</a>
+        <a href="#" class="nav-sec-item">Registry</a>
+        <a href="#" class="nav-sec-item">Gift Cards</a>
+        <a href="#" class="nav-sec-item">Sell</a>
+        <a href="#" class="nav-sec-item prime-badge">Try Prime</a>
+    </div>
+</header>
+
+<!-- ===================== HERO BANNER ===================== -->
+<section class="hero-section">
+    <div class="hero-slides">
+
+        <!-- Slide 1: Electronics – Samsung phone -->
+        <div class="hero-slide slide-dark active">
+            <div class="hero-content">
+                <span class="hero-badge">Limited Time</span>
+                <h1>Great Indian <br><span>Festival</span></h1>
+                <p>Up to 80% off on Smartphones, Electronics &amp; more</p>
+                <a href="#" class="hero-btn">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="hero-visual">
+                <img src="box4_image.jpg" alt="Samsung Galaxy S23 Ultra" class="hero-img hero-phone-img">
+            </div>
+        </div>
+
+        <!-- Slide 2: Home Living – Furniture -->
+        <div class="hero-slide slide-green">
+            <div class="hero-content">
+                <span class="hero-badge">New Arrivals</span>
+                <h1>Home &amp; Living <br><span>Elegance</span></h1>
+                <p>Curated furniture &amp; décor to elevate every room</p>
+                <a href="#" class="hero-btn">Explore <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="hero-visual">
+                <img src="box3_image.jpg" alt="Furniture" class="hero-img hero-home-img">
+            </div>
+        </div>
+
+        <!-- Slide 3: Fashion – Clothing -->
+        <div class="hero-slide slide-red">
+            <div class="hero-content">
+                <span class="hero-badge">Flash Sale</span>
+                <h1>Fashion <br><span>Fiesta</span></h1>
+                <p>Trending styles at unbeatable prices this season</p>
+                <a href="#" class="hero-btn">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="hero-visual">
+                <img src="box1_image.jpg" alt="Fashion" class="hero-img hero-fashion-img">
+            </div>
+        </div>
+
+    </div>
+    <button class="slide-btn prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
+    <button class="slide-btn next-btn"><i class="fa-solid fa-chevron-right"></i></button>
+    <div class="slide-dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+</section>
+
+<!-- ===================== MAIN CONTENT ===================== -->
+<main class="main-content">
+
+    <!-- ---- SHOP BY CATEGORY (image boxes) ---- -->
+    <section class="section-container">
+        <div class="section-header">
+            <h2 class="section-title">Shop by Category</h2>
+        </div>
+        <div class="img-category-grid">
+
+            <a href="#" class="img-cat-card">
+                <div class="img-cat-img-wrap">
+                    <img src="box1_image.jpg" alt="Fashion">
+                </div>
+                <div class="img-cat-label">
+                    <span>Fashion &amp; Apparel</span>
+                    <span class="img-cat-sub">Shop now <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </a>
+
+            <a href="#" class="img-cat-card">
+                <div class="img-cat-img-wrap">
+                    <img src="box2_image.jpg" alt="Health &amp; Beauty">
+                </div>
+                <div class="img-cat-label">
+                    <span>Health &amp; Personal Care</span>
+                    <span class="img-cat-sub">Shop now <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </a>
+
+            <a href="#" class="img-cat-card">
+                <div class="img-cat-img-wrap">
+                    <img src="box3_image.jpg" alt="Home &amp; Living">
+                </div>
+                <div class="img-cat-label">
+                    <span>Home &amp; Living</span>
+                    <span class="img-cat-sub">Shop now <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </a>
+
+            <a href="#" class="img-cat-card">
+                <div class="img-cat-img-wrap img-cat-white">
+                    <img src="box4_image.jpg" alt="Electronics">
+                </div>
+                <div class="img-cat-label">
+                    <span>Electronics</span>
+                    <span class="img-cat-sub">Shop now <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </a>
+
+            <a href="#" class="img-cat-card">
+                <div class="img-cat-img-wrap">
+                    <img src="box5_image.jpg" alt="Beauty">
+                </div>
+                <div class="img-cat-label">
+                    <span>Beauty &amp; Makeup</span>
+                    <span class="img-cat-sub">Shop now <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </a>
+
+            <a href="#" class="img-cat-card">
+                <div class="img-cat-img-wrap">
+                    <img src="box6_image.jpg" alt="Pet Supplies">
+                </div>
+                <div class="img-cat-label">
+                    <span>Pet Supplies</span>
+                    <span class="img-cat-sub">Shop now <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- ---- DEALS OF THE DAY ---- -->
+    <section class="section-container deals-row">
+        <div class="section-header">
+            <h2 class="section-title">Deals of the Day</h2>
+            <a href="#" class="see-all-btn">See all deals <i class="fa-solid fa-chevron-right"></i></a>
+        </div>
+        <div class="deals-grid">
+
+            <div class="deal-card">
+                <div class="deal-badge">Up to 40% off</div>
+                <div class="deal-img-wrap deal-img-white">
+                    <img src="box4_image.jpg" alt="Samsung" class="deal-real-img">
+                </div>
+                <div class="deal-info">
+                    <p class="deal-title">Samsung Galaxy S23 Ultra 5G</p>
+                    <p class="deal-price"><span class="price-symbol">&#8377;</span>89,999 <span class="original-price">&#8377;1,24,999</span></p>
+                    <div class="deal-progress-bar"><div class="deal-progress" style="width:65%"></div></div>
+                    <p class="deal-claimed">65% claimed</p>
+                </div>
+            </div>
+
+            <div class="deal-card">
+                <div class="deal-badge">Up to 60% off</div>
+                <div class="deal-img-wrap">
+                    <img src="box1_image.jpg" alt="Fashion" class="deal-real-img">
+                </div>
+                <div class="deal-info">
+                    <p class="deal-title">Wardrobe Organiser Set (5-tier)</p>
+                    <p class="deal-price"><span class="price-symbol">&#8377;</span>499 <span class="original-price">&#8377;1,299</span></p>
+                    <div class="deal-progress-bar"><div class="deal-progress" style="width:80%"></div></div>
+                    <p class="deal-claimed">80% claimed</p>
+                </div>
+            </div>
+
+            <div class="deal-card">
+                <div class="deal-badge">Up to 50% off</div>
+                <div class="deal-img-wrap">
+                    <img src="box5_image.jpg" alt="Beauty Kit" class="deal-real-img">
+                </div>
+                <div class="deal-info">
+                    <p class="deal-title">Premium Makeup Kit (12 pcs)</p>
+                    <p class="deal-price"><span class="price-symbol">&#8377;</span>1,199 <span class="original-price">&#8377;2,499</span></p>
+                    <div class="deal-progress-bar"><div class="deal-progress" style="width:55%"></div></div>
+                    <p class="deal-claimed">55% claimed</p>
+                </div>
+            </div>
+
+            <div class="deal-card">
+                <div class="deal-badge">Up to 35% off</div>
+                <div class="deal-img-wrap">
+                    <img src="box6_image.jpg" alt="Pet Supplies" class="deal-real-img">
+                </div>
+                <div class="deal-info">
+                    <p class="deal-title">Premium Pet Care Bundle</p>
+                    <p class="deal-price"><span class="price-symbol">&#8377;</span>899 <span class="original-price">&#8377;1,399</span></p>
+                    <div class="deal-progress-bar"><div class="deal-progress" style="width:42%"></div></div>
+                    <p class="deal-claimed">42% claimed</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ---- PRODUCT CARDS ---- -->
+    <section class="section-container products-section">
+        <div class="section-header">
+            <h2 class="section-title">Best Sellers</h2>
+            <a href="#" class="see-all-btn">View all <i class="fa-solid fa-chevron-right"></i></a>
+        </div>
+        <div class="products-grid">
+
+            <!-- Samsung phone -->
+            <div class="product-card">
+                <div class="product-badge">Best Seller</div>
+                <div class="product-img-wrap product-img-white">
+                    <img src="box4_image.jpg" alt="Samsung Galaxy S23 Ultra" class="product-real-img">
+                    <div class="product-overlay"><button class="quick-view-btn">Quick View</button></div>
+                </div>
+                <div class="product-info">
+                    <p class="product-brand">Samsung</p>
+                    <p class="product-name">Samsung Galaxy S23 Ultra 5G (256 GB, Phantom Black)</p>
+                    <div class="product-rating">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                        <span class="rating-count">(6,841)</span>
+                    </div>
+                    <div class="product-pricing">
+                        <span class="product-price">&#8377;89,999</span>
+                        <span class="product-original">&#8377;1,24,999</span>
+                        <span class="discount-badge">-28%</span>
+                    </div>
+                    <p class="prime-tag"><i class="fa-brands fa-amazon"></i> prime</p>
+                    <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Clothing/Hangers -->
+            <div class="product-card">
+                <div class="product-img-wrap">
+                    <img src="box1_image.jpg" alt="Wardrobe Organiser" class="product-real-img">
+                    <div class="product-overlay"><button class="quick-view-btn">Quick View</button></div>
+                </div>
+                <div class="product-info">
+                    <p class="product-brand">HomePro</p>
+                    <p class="product-name">5-Tier Magic Pants Hanger Wardrobe Space Saver</p>
+                    <div class="product-rating">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                        <span class="rating-count">(3,102)</span>
+                    </div>
+                    <div class="product-pricing">
+                        <span class="product-price">&#8377;499</span>
+                        <span class="product-original">&#8377;1,299</span>
+                        <span class="discount-badge">-62%</span>
+                    </div>
+                    <p class="prime-tag"><i class="fa-brands fa-amazon"></i> prime</p>
+                    <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Personal Care -->
+            <div class="product-card">
+                <div class="product-badge new-badge">New</div>
+                <div class="product-img-wrap product-img-lightblue">
+                    <img src="box2_image.jpg" alt="Grooming Kit" class="product-real-img">
+                    <div class="product-overlay"><button class="quick-view-btn">Quick View</button></div>
+                </div>
+                <div class="product-info">
+                    <p class="product-brand">Grooming Essentials</p>
+                    <p class="product-name">Men's Complete Personal Care Grooming Kit (6-in-1)</p>
+                    <div class="product-rating">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                        <span class="rating-count">(2,540)</span>
+                    </div>
+                    <div class="product-pricing">
+                        <span class="product-price">&#8377;749</span>
+                        <span class="product-original">&#8377;1,499</span>
+                        <span class="discount-badge">-50%</span>
+                    </div>
+                    <p class="prime-tag"><i class="fa-brands fa-amazon"></i> prime</p>
+                    <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Furniture -->
+            <div class="product-card">
+                <div class="product-img-wrap product-img-warm">
+                    <img src="box3_image.jpg" alt="Study Desk" class="product-real-img">
+                    <div class="product-overlay"><button class="quick-view-btn">Quick View</button></div>
+                </div>
+                <div class="product-info">
+                    <p class="product-brand">Urban Ladder</p>
+                    <p class="product-name">Minimalist Study Desk with Drawer &amp; Velvet Chair Set</p>
+                    <div class="product-rating">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        <span class="rating-count">(1,231)</span>
+                    </div>
+                    <div class="product-pricing">
+                        <span class="product-price">&#8377;18,499</span>
+                        <span class="product-original">&#8377;28,999</span>
+                        <span class="discount-badge">-36%</span>
+                    </div>
+                    <p class="prime-tag"><i class="fa-brands fa-amazon"></i> prime</p>
+                    <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Makeup -->
+            <div class="product-card">
+                <div class="product-badge">Top Rated</div>
+                <div class="product-img-wrap product-img-mint">
+                    <img src="box5_image.jpg" alt="Makeup Kit" class="product-real-img">
+                    <div class="product-overlay"><button class="quick-view-btn">Quick View</button></div>
+                </div>
+                <div class="product-info">
+                    <p class="product-brand">Maybelline</p>
+                    <p class="product-name">Complete Makeup Kit — Brushes, Highlighter, Lipstick &amp; More</p>
+                    <div class="product-rating">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                        <span class="rating-count">(8,903)</span>
+                    </div>
+                    <div class="product-pricing">
+                        <span class="product-price">&#8377;1,199</span>
+                        <span class="product-original">&#8377;2,499</span>
+                        <span class="discount-badge">-52%</span>
+                    </div>
+                    <p class="prime-tag"><i class="fa-brands fa-amazon"></i> prime</p>
+                    <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Pets -->
+            <div class="product-card">
+                <div class="product-img-wrap product-img-peach">
+                    <img src="box6_image.jpg" alt="Pet Supplies" class="product-real-img">
+                    <div class="product-overlay"><button class="quick-view-btn">Quick View</button></div>
+                </div>
+                <div class="product-info">
+                    <p class="product-brand">Pedigree</p>
+                    <p class="product-name">Premium Pet Care Combo — Dog &amp; Cat Food + Accessories</p>
+                    <div class="product-rating">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                        <span class="rating-count">(4,417)</span>
+                    </div>
+                    <div class="product-pricing">
+                        <span class="product-price">&#8377;899</span>
+                        <span class="product-original">&#8377;1,499</span>
+                        <span class="discount-badge">-40%</span>
+                    </div>
+                    <p class="prime-tag"><i class="fa-brands fa-amazon"></i> prime</p>
+                    <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ---- PRIME BANNER ---- -->
+    <section class="prime-banner">
+        <div class="prime-banner-content">
+            <i class="fa-brands fa-amazon prime-logo-icon"></i>
+            <div>
+                <h3>Try <strong>Prime</strong></h3>
+                <p>Fast free delivery, exclusive deals, movies &amp; more</p>
+            </div>
+            <a href="#" class="prime-cta-btn">Try Prime Free <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <!-- ---- SPOTLIGHT BANNERS ---- -->
+    <section class="spotlight-row">
+        <div class="spotlight-card">
+            <img src="box6_image.jpg" alt="Pet Supplies" class="spotlight-img">
+            <div class="spotlight-overlay">
+                <h3>Shop Pet Supplies</h3>
+                <p>Everything your furry friends need</p>
+                <a href="#" class="spotlight-btn">Shop Now</a>
+            </div>
+        </div>
+        <div class="spotlight-card">
+            <img src="box5_image.jpg" alt="Beauty" class="spotlight-img">
+            <div class="spotlight-overlay">
+                <h3>Beauty Essentials</h3>
+                <p>Top brands, unbeatable prices</p>
+                <a href="#" class="spotlight-btn">Explore</a>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+    <div class="footer-top-bar">
+        <a href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Back to top</a>
+    </div>
+    <div class="footer-main">
+        <div class="footer-col">
+            <h4>Get to Know Us</h4>
+            <ul>
+                <li><a href="#">About Amazon</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Press Releases</a></li>
+                <li><a href="#">Amazon Science</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Connect with Us</h4>
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-facebook-f"></i> Facebook</a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Make Money with Us</h4>
+            <ul>
+                <li><a href="#">Sell on Amazon</a></li>
+                <li><a href="#">Amazon Associates</a></li>
+                <li><a href="#">Advertise Your Products</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Let Us Help You</h4>
+            <ul>
+                <li><a href="#">Your Account</a></li>
+                <li><a href="#">Returns Centre</a></li>
+                <li><a href="#">100% Purchase Protection</a></li>
+                <li><a href="#">Amazon App Download</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <a href="#" class="footer-logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon" class="footer-logo-img">
+        </a>
+        <div class="footer-bottom-links">
+            <a href="#">Conditions of Use &amp; Sale</a>
+            <a href="#">Privacy Notice</a>
+            <a href="#">Interest-Based Ads Notice</a>
+        </div>
+        <p class="footer-copy">&copy; 1996-2026, Amazon.com, Inc. or its affiliates</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
